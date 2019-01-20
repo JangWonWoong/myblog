@@ -1,0 +1,4 @@
+github.com/graphql-go/graphql v0.7.7 h1:nwEsJGwPq9N6cElOO+NYyoWuELAQZ4GuJks0Rlco5og=
+github.com/graphql-go/graphql v0.7.7/go.mod h1:k6yrAYQaSP59DC5UVxbgxESlmVyojThKdORUqGDGmrI=
+gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce h1:xcEWjVhvbDy+nHP67nPDDpbYrY+ILlfndk4bRioVHaU=
+gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce/go.mod h1:yeKp02qBN3iKW1OzL3MGk2IdtZzaj7SFntXj72NppTA=

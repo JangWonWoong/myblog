@@ -1,0 +1,199 @@
+*, h1 { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; word-break: break-all; word-wrap: break-word; }
+a { text-decoration: none; color: inherit; font-size: inherit; font-family: inherit; line-height: inherit; text-align: inherit; }
+table { border-collapse: collapse; table-layout: fixed; }
+fieldset { border: none; width: auto; height: auto; margin: 0; padding: 0; display: inline-block; }
+ul, li, ol { list-style-type: none; }
+legend, caption, .caption { overflow: hidden; width: 1px; height: 1px; font-size: 1px; line-height: 1px; text-indent: -9999px; }
+input, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0; font-family: inherit; }
+select::-ms-expand { display: none; }
+
+/* start */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #d7dae0;
+    font-family: Consolas, sans-serif;
+}
+
+header .header {
+    height: 80px;
+    padding: 0 60px;
+    line-height: 80px;
+    background: #282c34;
+    border-bottom: 1px solid #181a1f;
+}
+
+header .header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header .header h1 {
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header .header h1 strong {
+    color: #e5c07b;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header .header h1 small {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+header .header ul {
+    float: right;
+    font-size: 24px;
+}
+
+header .content-title {
+    padding: 40px 60px;
+    font-size: 0;
+    background: #21252b;
+    border-bottom: 1px solid #181a1f;
+    border-top: 1px solid #282c34;
+}
+
+header h2.title {
+    clear: both;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #9da5b4;
+}
+
+main {
+    min-height: calc(100% - 160px);
+    padding: 30px 60px;
+    background: #21252b;
+    border-top: 1px solid #282c34;
+}
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+main .list {
+    display: block;
+    padding: 40px 20px;
+    font-size: 0;
+    border-bottom: 1px solid #181a1f;
+    border-top: 1px solid #282c34;
+    transition: background 0.5s;
+}
+
+main .list .title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #9da5b4;
+}
+
+main .list .time, main .list .views, header .content-title .time, header .content-title .views {
+    display: inline-block;
+    font-size: 16px;
+    color: #d19a66;
+}
+
+main .list .time::after, header .content-title .time::after {
+    content: '|';
+    margin: 0 20px;
+}
+
+main .list .time::before, header .content-title .time::before {
+    margin-right: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    content: '\f017';
+}
+
+main .list .views::before, header .content-title .views::before {
+    margin-right: 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    content: '\f06e';
+}
+
+main .list .tags, header .content-title .tags {
+    display: block;
+    margin-top: 20px;
+}
+
+main div.tags {
+    margin-bottom: 20px;
+}
+
+main .list .tags .tag, main a.tag, header .content-title .tag {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #21252b;
+    background: #d7dae0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+main .list .tags .tag::before, main a.tag::before, header .content-title .tag::before {
+    content: '#';
+}
+
+main .list:hover {
+    background: #292d35;
+}
+
+footer {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    background: #282c34;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #569cd6;
+}
+
+@media only screen and (max-width: 800px) {
+    html, body {
+        font-size: 14px;
+    }
+    header .header {
+        padding: 0 30px;
+    }
+    header .header h1 strong {
+        font-size: 20px;
+    }
+    header .content-title {
+        padding: 40px 30px;
+    }
+    header h2.title, main .list .title {
+        font-size: 24px;
+    }
+    main {
+        padding: 30px;
+    }
+    main .list .time, main .list .views, header .content-title .time, header .content-title .views {
+        font-size: 14px;
+    }
+    main .list .time::before, header .content-title .time::before, main .list .views::before, header .content-title .views::before {
+        font-size: 12px;
+    }
+    main .list .tags .tag, main a.tag, header .content-title .tag {
+        font-size: 12px;
+    }
+}
